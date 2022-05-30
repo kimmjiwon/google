@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/192f08afef.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="google.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <ul class="gnb">
+            <li><a href="#">Gmail</a></li>
+            <li><a href="#">이미지</a></li>
+            <li id="gnb-menu"><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+            <li><a class="profile" href="#">지원</a></li>
+        </ul>
+        <div class="menu">
+            <div class="menu-icon">
+                <div class="menu-icon-thum1">
+                    지원
+                </div>
+                <p>Google 계정</p>
+            </div>
+            <div class="menu-icon">
+                <div class="menu-icon-thum menu-icon-thum2">검색</div>
+                <p>검색</p>
+            </div>
+            <div class="menu-icon">
+                <div class="menu-icon-thum menu-icon-thum3">지도</div>
+                <p>지도</p>
+            </div>
+            <div class="menu-icon">
+                <div class="menu-icon-thum menu-icon-thum4">YouTube</div>
+                <p>YouTube</p>
+            </div>
+            <div class="menu-icon">
+                <div class="menu-icon-thum menu-icon-thum5">Play</div>
+                <p>Play</p>
+            </div>
+            <div class="menu-icon">
+                <div class="menu-icon-thum menu-icon-thum6">뉴스</div>
+                <p>뉴스</p>
+            </div>
+            <div class="menu-icon">
+                <div class="menu-icon-thum menu-icon-thum7">Gmail</div>
+                <p>Gmail</p>
+            </div>
+            <div class="menu-icon">
+                <div class="menu-icon-thum menu-icon-thum8">Meet</div>
+                <p>Meet</p>
+            </div>
+            <div class="menu-icon">
+                <div class="menu-icon-thum menu-icon-thum9">채팅</div>
+                <p>채팅</p>
+            </div>
+            <div class="menu-icon">
+                <div class="menu-icon-thum menu-icon-thum10">주소록</div>
+                <p>주소록</p>
+            </div>
+            <div class="menu-icon">
+                <div class="menu-icon-thum menu-icon-thum11">드라이브</div>
+                <p>드라이브</p>
+            </div>
+            <div class="menu-icon">
+                <div class="menu-icon-thum menu-icon-thum12">캘린더</div>
+                <p>캘린더</p>
+            </div>
+            <div class="menu-icon">
+                <div class="menu-icon-thum menu-icon-thum13">번역</div>
+                <p>번역</p>
+            </div>
+            <div class="menu-icon">
+                <div class="menu-icon-thum menu-icon-thum14">사진</div>
+                <p>사진</p>
+            </div>
+            <div class="menu-icon">
+                <div class="menu-icon-thum menu-icon-thum15">Duo</div>
+                <p>Duo</p>
+            </div>
+            <div class="menu-icon">
+                <div class="menu-icon-thum menu-icon-thum16">쇼핑</div>
+                <p>쇼핑</p>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="logo">
+            <img src="google_logo.svg" alt="">
+        </div>
+        <div class="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <label for="search">
+                <input type="text" id="search" placeholder="Google 검색 또는 URL 입력">
+            </label>
+            <i class="fa-solid fa-microphone"></i>
+        </div>
+        <div class="plus">
+            <div class="plus-icon"><i class="fa-solid fa-plus"></i></div>
+            <div class="plus-text">바로가기 추가</div>
+        </div>
+    </main>
+    <script>
+        const gnbMenu = document.getElementById('gnb-menu')
+        const menu = document.querySelector('.menu')
+        gnbMenu.addEventListener('click', () => {
+            menu.classList.toggle('on')
+        })
+
+    </script>
+</body>
+</html>
